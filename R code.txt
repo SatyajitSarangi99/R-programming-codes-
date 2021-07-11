@@ -1,0 +1,26 @@
+## install ggplot2 package and load ggplot2 library
+## by using data function we load the table
+## then we use view function to see the table
+
+install.packages("ggplot2")
+library(ggplot2)
+data("diamonds")
+View(diamonds)
+
+
+## to view first 6 columns from the table
+## and colname function to view only the name of column names of that table
+
+head(diamonds)
+colnames(diamonds)
+
+## to add mutate function
+## it is a part of dplyr package in tidiverse
+## we install the tidiverse package
+## then add mutate() function
+
+install.packages("tidyverse")
+library(tidyverse)
+mutate(diamonds, depthpercentage = depth / 100)  
+
+##mutate function helps to add new column

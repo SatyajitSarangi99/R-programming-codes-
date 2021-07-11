@@ -1,0 +1,39 @@
+## Data frame
+## as an data analyst having proper knowledge about data frame is imp.
+
+#we need to instal ggplot2 package 
+
+install.packages("ggplot2")
+library("ggplot2")
+data("diamonds")
+View(diamonds)
+
+## diamonds dataframe has 53940 rows and 10 variables
+
+## -------------------------------------------------------------
+
+## But i want to view only the first 6 columns from the data frame
+## so i have to use head() function
+
+head(diamonds)
+
+## now i want to summarize the data frame to collect some more insights
+## to view only the column names by using colnames() function
+
+colnames(diamonds)
+
+
+# now i want to clean my data frame
+## for which ineed to install (here, skimr, janitor, dplyr) functions
+
+install.packages("here")
+library(here)
+
+install.packages("skimr")
+library(skimr)
+
+install.packages("janitor")
+library(janitor)
+
+install.packages("dplyr")
+library(dplyr)
